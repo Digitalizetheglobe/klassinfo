@@ -27,11 +27,29 @@ const Product = () => {
       <img src={iconss} alt="Target Icon" className="w-[100px] h-[100px]" />
     </div>
     <h2
-      className="text-white text-[48px]"
-      style={{ fontFamily: 'Blacker Sans Display Trial Light', color: '#FFFFFF' }}
-    >
-      The Heart of What <br /> Drives Us
-    </h2>
+  className="text-white text-[48px]"
+  style={{
+    fontFamily: 'Blacker Sans Display Trial Light',
+    color: '#FFFFFF',
+    textAlign: 'center', // Default for larger screens
+    margin: '0px 20px',
+    fontSize: '3.25rem',
+    lineHeight: '3.5rem',
+  }}
+>
+  The Heart of What <br /> Drives Us
+</h2>
+
+<style jsx>{`
+  @media (max-width: 768px) {
+    h2 {
+      text-align: left; // Align text left on mobile
+    }
+  }
+`}</style>
+
+
+
   </div>
 
   <div className="flex flex-wrap justify-center gap-8">

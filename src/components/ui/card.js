@@ -39,7 +39,11 @@ export const AnimatedTestimonials = ({ testimonials, autoplay = false }) => {
       <div className="flex flex-col lg:flex-row justify-end lg:mr-[70px]">
         <div className="w-full lg:w-auto mr-20">
           <div className="w-full sm:w-[450px] lg:max-w-none justify-center mt-[70px] lg:mt-[120px] mx-auto lg:mx-0 mb-[20px] lg:mb-[120px] text-center lg:text-left px-4">
-            <h4 className="font-[Blacker] text-white mb-4 text-3xl sm:text-4xl md:text-5xl tracking-[0.1em] leading-[150%]">
+            <h4 className="font-[Blacker] text-white mb-4 text-3xl sm:text-4xl md:text-5xl" style={{
+    fontFamily: 'Blacker Sans Display Trial Light',
+    fontSize: '3.25rem',
+    lineHeight: '3.5rem',
+  }}>
               Making an Impact
             </h4>
             <p className="text-[14px] sm:text-[16px] lg:text-[18px] text-white mt-4 font-normal tracking-[0.1em] leading-[150%]">
@@ -61,7 +65,7 @@ export const AnimatedTestimonials = ({ testimonials, autoplay = false }) => {
             <img
               src={testimonials[active].src}
               draggable={false}
-              className="h-[400px] lg:h-[450px] w-[250px] lg:w-[350px] object-cover object-center"
+              className="h-[430px] lg:h-[450px] w-[300px] lg:w-[350px] object-cover object-center"
             />
           </motion.div>
 

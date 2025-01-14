@@ -258,7 +258,7 @@
 
 @media (max-width: 768px) {
     .hero-section {
-        padding: 40px 60px 40px 0px ;
+      padding: 40px 25px 40px 0;
         height: 705px; /* Reduced padding for mobile */
     }
     .hero-container {

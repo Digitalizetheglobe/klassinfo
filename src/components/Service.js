@@ -42,11 +42,19 @@ const Service = () => {
     Our Services
   </h4>
 
-  <h2 class="font-[Blacker] text-gray-800 mb-4 text-3xl sm:text-4xl md:text-5xl tracking-[0.1em] leading-[150%]">
-    Solutions Tailored For Your Success
-  </h2>
+  <h2
+  className="font-[Blacker] text-gray-800 mb-4 text-3xl sm:text-4xl md:text-5xl"
+  style={{
+    fontFamily: 'Blacker Sans Display Trial Light',
+    fontSize: '3.25rem',
+    lineHeight: '3.5rem',
+  }}
+>
+  Solutions Tailored For Your Success
+</h2>
 
-  <p class="text-base text-gray-700 tracking-[0.1em] leading-[150%]">
+
+  <p class="text-base text-gray-700 tracking-[0.1em] leading-[250%]">
     Empowering your business with tailored technology solutions designed to drive growth, streamline operations, and foster innovation. Discover how our expertise in IT strategy, digital transformation, cloud services, and enterprise solutions can propel you forward.
   </p>
 </div>
