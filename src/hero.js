@@ -21,58 +21,64 @@ import '@fortawesome/fontawesome-free/css/all.css';
 const Hero = () => {
 
   const [activeItem, setActiveItem] = useState('Home');
-    const [isMenuOpen, setIsMenuOpen] = useState(false); // State to toggle menu visibility
-  
-    const menuItems = [
-      { name: 'Home', path: '/' },
-      { name: 'About', path: '#about' }, // Scroll to About section
-      { name: 'Leadership', path: '#legacy-scrollbar' }, // Scroll to Leadership And Legacy section
-      { name: 'Values', path: '#product' },
-      { name: 'Solutions', path: '#service' }, // Scroll to Solutions section
-      { name: 'Making an Impact', path: '#animated' },
-    ];
-  
-    const getBackgroundColor = () => {
-      switch (activeItem) {
-        case 'Home':
-          return 'bg-[#0d3b4f]';
-        case 'About':
-          return 'bg-[#0d3b4f]';
-        case 'Leadership And Legacy':
-          return 'bg-[#0d3b4f]';
-        case 'Values':
-          return 'bg-[#0d3b4f]';
-        case 'Solutions':
-          return 'bg-[#0d3b4f]';
-        case 'Making an Impact':
-          return 'bg-[#0d3b4f]';
-        default:
-          return 'bg-[#0d3b4f]';
-      }
-    };
-  
-    const handleScroll = (sectionId) => {
-      const section = document.getElementById(sectionId);
-      if (section) {
-        window.scrollTo({
-          top: section.offsetTop,
-          behavior: 'smooth',
-        });
-      }
-    };
-  
+  const [isMenuOpen, setIsMenuOpen] = useState(false); // State to toggle menu visibility
+
+  const menuItems = [
+    { name: 'Home', path: '/' },
+    { name: 'About', path: '#about' }, // Scroll to About section
+    { name: 'Leadership', path: '#legacy-scrollbar' }, // Scroll to Leadership And Legacy section
+    { name: 'Values', path: '#product' },
+    { name: 'Solutions', path: '#product' }, // Scroll to Solutions section
+    { name: 'Making an Impact', path: '#service' },
+    // { name: 'Making an Impact', path: '#animated' },
+  ];
+
+  const getBackgroundColor = () => {
+    switch (activeItem) {
+      case 'Home':
+        return 'bg-[#0d3b4f]';
+      case 'About':
+        return 'bg-[#0d3b4f]';
+      case 'Leadership And Legacy':
+        return 'bg-[#0d3b4f]';
+      case 'Values':
+        return 'bg-[#0d3b4f]';
+      case 'Solutions':
+        return 'bg-[#0d3b4f]';
+      case 'Making an Impact':
+        return 'bg-[#0d3b4f]';
+      default:
+        return 'bg-[#0d3b4f]';
+    }
+  };
+
+  const handleScroll = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      window.scrollTo({
+        top: section.offsetTop,
+        behavior: 'smooth',
+      });
+    }
+  };
   return (
     <>
     <div>
           {/* Button to open menu, shown only on Home page and when the menu is closed */}
           {window.location.pathname === '/' && !isMenuOpen && (
-            <button
-              className="absolute top-8 w-4 h-4 right-8 text-white rounded flex items-center justify-center"
-              style={{ zIndex: 1000 }} // Added z-index here
-              onClick={() => setIsMenuOpen(true)}
-            >
-              <i className="fas fa-bars"></i> {/* Font Awesome hamburger icon */}
-            </button>
+           <button
+           className="fixed top-8 right-8 w-8 h-8 text-[#EFD49C] rounded-full flex items-center justify-center shadow-lg hover:bg-white transition-colors"
+           style={{ zIndex: 1000, border: '1px solid #EFD49C' }}
+           onClick={() => {
+             setIsMenuOpen(true); // Open the menu
+             window.scrollTo({ top: 0, behavior: 'smooth' }); // Scroll to the top of the page
+           }}
+         >
+           <i className="fas fa-bars"></i>
+         </button>
+         
+         
+          
           )}
     
           {/* MenuBar container */}
@@ -80,10 +86,15 @@ const Hero = () => {
             <div className={`min-h-screen ${getBackgroundColor()} transition-colors duration-300`}>
               <div className="container mx-auto px-4 pb-8 pt-12">
               <div className="flex justify-between items-center mb-8">
-                <X
-                  className="w-7 h-7 text-white absolute left-[95%] cursor-pointer"
-                  onClick={() => setIsMenuOpen(false)} // Close menu when clicked
-                />
+              <X
+                className="w-7 h-7 text-white absolute cursor-pointer top-8 right-8"
+                style={{
+                  // left: '95%',
+                  marginRight: window.innerWidth <= 768 ? '10px' : '0px', // Add margin only for mobile
+                }}
+                onClick={() => setIsMenuOpen(false)} // Close menu when clicked
+              />
+
               </div>
 
                 <nav className="flex flex-col items-center space-y-6 mt-[70px]">
@@ -124,23 +135,25 @@ const Hero = () => {
         <div className="content">
           <h1>KLAS</h1>
           <h4>INFOTECH</h4>
-          <p>PURPOSE-DRIVEN ALLIANCES</p>
+          {/* <p>PURPOSE-DRIVEN ALLIANCES</p> */}
         </div>
+         {/* <p>PURPOSE-DRIVEN ALLIANCES</p> */}
       </section>
       <div 
   style={{
     display: 'flex',         // Enables flexbox
     justifyContent: 'center', // Centers horizontally
     alignItems: 'center',     // Centers vertically
-    height: '472px', 
+    // height: '472px', 
     backgroundColor: '#12394C',
 
              // Takes full viewport height
   }}
 >
+<section id="about"> </section>
   <section 
     className="hero-section" 
-    id="about"
+   
     style={{ height: '100%', objectFit: 'cover' }}
   >
     <div className="hero-container">
@@ -174,8 +187,10 @@ const Hero = () => {
 </div>
 
 
-<section id="legacy-scrollbar"> <LegacyScrollBar/></section>
-<section id="product"> <Product/></section>
+<section id="legacy-scrollbar"> </section>
+<section > <LegacyScrollBar/></section>
+<section id="product"> </section>
+<section > <Product/></section>
 <div 
 style={{
   display: 'flex',         // Enables flexbox
@@ -187,10 +202,12 @@ style={{
            // Takes full viewport height
 }}
 >
-<section id="service"> <Service/></section>
+<section id="service"> </section>
+<section > <Service/></section>
 </div>
 
-<section id="animated"> <AnimatedTestimonialsDemo/></section>
+<section id="animated"> </section>
+<section > <AnimatedTestimonialsDemo/></section>
 <section id="footer"> <Footer/></section>
       
       

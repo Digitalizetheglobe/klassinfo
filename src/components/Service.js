@@ -37,7 +37,7 @@ const Service = () => {
   return (
     <>
       <section className="services-section">
-      <div class="w-full sm:w-[450px] mt-[70px] sm:mt-[50px] px-4">
+      <div class="w-full sm:w-[550px] mt-[70px] sm:mt-[50px] px-4">
   <h4 class="inline-block bg-[#12424B] text-white text-sm uppercase rounded-full px-4 py-2 tracking-[0.1em] mb-4">
     Our Services
   </h4>
@@ -64,9 +64,21 @@ const Service = () => {
               >
                 <h3>{box.title}</h3>
                 <p>{box.content}</p>
+                <div style={{
+  position: 'fixed',
+  bottom: '10px',
+  left: '10px',
+  fontSize: '24px',
+  zIndex: 1000
+}}>
+  <i className="fas fa-plus"></i>
+</div>
+
               </div>
+              
             ))}
           </div>
+          
         </div>
       </section>
     </>

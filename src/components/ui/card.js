@@ -26,7 +26,7 @@ export const AnimatedTestimonials = ({ testimonials, autoplay = false }) => {
   const randomRotateY = () => Math.floor(Math.random() * 21) - 10;
 
   return (
-    <div className="relative pt-[70px] pb-[30px]">
+    <div className="relative pt-[70px] pb-[70px]">
       <video
   src={videoHero}
   autoPlay
@@ -36,8 +36,8 @@ export const AnimatedTestimonials = ({ testimonials, autoplay = false }) => {
 />
 
 
-      <div className="flex flex-col lg:flex-row justify-end lg:mr-[170px]">
-        <div className="w-full lg:w-auto">
+      <div className="flex flex-col lg:flex-row justify-end lg:mr-[70px]">
+        <div className="w-full lg:w-auto mr-20">
           <div className="w-full sm:w-[450px] lg:max-w-none justify-center mt-[70px] lg:mt-[120px] mx-auto lg:mx-0 mb-[20px] lg:mb-[120px] text-center lg:text-left px-4">
             <h4 className="font-[Blacker] text-white mb-4 text-3xl sm:text-4xl md:text-5xl tracking-[0.1em] leading-[150%]">
               Making an Impact
@@ -61,7 +61,7 @@ export const AnimatedTestimonials = ({ testimonials, autoplay = false }) => {
             <img
               src={testimonials[active].src}
               draggable={false}
-              className="h-[250px] lg:h-[450px] w-[200px] lg:w-[350px] object-cover object-center"
+              className="h-[400px] lg:h-[450px] w-[250px] lg:w-[350px] object-cover object-center"
             />
           </motion.div>
 

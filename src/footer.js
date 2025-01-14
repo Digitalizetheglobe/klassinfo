@@ -8,7 +8,8 @@ const Footer = () => {
         <div className="text-end">
         <h1 className="text-6xl " style={{ fontFamily: "Times New Roman, serif",
          }}>KLAS</h1>
-          <span className="tracking-wide text-sm uppercase">INFOTECH</span>
+          <span className="tracking-wide text-sm uppercase"  style={{ fontFamily: "Times New Roman, serif", marginRight: '5px',
+         }}>INFOTECH</span>
         </div>
 
         {/* Details Section */}

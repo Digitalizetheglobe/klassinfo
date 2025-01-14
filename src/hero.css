@@ -47,29 +47,30 @@
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  /* text-align: center; */
   z-index: 1; /* Bring content above video */
 }
 
 .content h1 {
   font-size: 7rem;
-  margin-bottom: 20px;
+  margin-bottom: 0; /* Adjusted margin for better alignment */
   font-family: 'Times New Roman', Times, serif;
   color: #EFD49C;
   text-align: end;
   padding: 0px;
+  position: relative; /* For better vertical control */
 }
 
 .content h4 {
   font-size: 2.5rem;
-  margin-right: 0px;
+  margin-right: 0;
   font-family: 'Blacker Sans Display Trial Light';
   color: #ffffff;
-  top: 10%;
   text-align: end;
-  margin-top: -55px;
-  
+  margin-top: -35px;
+  margin-right: 5px; /* Adjusted for alignment */
+  position: relative; /* To align h4 better with h1 */
 }
+
 
 .content p {
   font-size: 1.2rem;
@@ -187,6 +188,7 @@
     border-radius: 4px;
     letter-spacing: 10%; 
     line-height: 150%; 
+    font-weight: bold;
 }
 
 .hero-text h2 {
@@ -200,7 +202,7 @@
 }
 
 .hero-text p {
-    font-size: 20px;
+  font-size: 1.1rem;
     line-height: 1.8;
     font-family: "Jost", sans-serif;
     letter-spacing: 10%; 
@@ -256,29 +258,42 @@
 
 @media (max-width: 768px) {
     .hero-section {
-        padding: 40px 60px 40px 0px ; /* Reduced padding for mobile */
+        padding: 40px 60px 40px 0px ;
+        height: 705px; /* Reduced padding for mobile */
     }
-
     .hero-container {
-        flex-direction: column; /* Stack content vertically */
-        text-align: center;
-    }
+      
+      display: flex
+      ;
+          align-items: left;
+          justify-content: end;
+          text-align: left;
+          gap: 10px;
+          /* max-width: 1200px; */
+          margin: 12px 0px 0px 29px;
+          flex-wrap: wrap;
+     
+      
+      flex-direction: column; /* Stack content vertically */
+      text-align: center; /* Allow wrapping for mobile screens */
+  }
+    
 
     .hero-text {
         width: 100%; /* Full width for text on mobile */
         margin-right: 0; /* Remove margin-right */
-        text-align: center; /* Center-align the text */
+         /* Center-align the text */
     }
 
     .hero-text h2 {
-        font-size: 36px; /* Smaller font size for h2 */
-        line-height: 42px;
+        font-size: 3.25rem; /* Smaller font size for h2 */
+        line-height: 3.5rem;
         letter-spacing: 2%; /* Reduce letter spacing */
     }
 
     .hero-text p {
-        font-size: 14px; /* Slightly smaller text on mobile */
-        line-height: 1.6;
+      font-size: 1.1rem;
+      line-height: 2rem;
     }
 
     .card {

@@ -38,10 +38,11 @@ const Product = () => {
   {/* Mission Card */}
   <div
     className="bg-white pl-8 pr-8 pb-8 pt-1 shadow-lg w-[360px] h-[460px]"
+    style={{ borderRadius: '4px' }}
     data-aos="fade-up"
     data-aos-duration="1000"
   >
-    <div className="mb-4">
+    <div className="mb-4 "  style={{ marginTop: '15px' }}>
       <img src={icon} alt="Mission Icon" className="w-10 h-10" />
     </div>
     <h2
@@ -58,10 +59,11 @@ const Product = () => {
   {/* Expertise Card */}
   <div
     className="bg-white pl-8 pr-8 pb-8 pt-1  shadow-lg w-[360px] h-[460px]"
+    style={{ borderRadius: '4px' }}
     data-aos="fade-up"
     data-aos-duration="2000"
   >
-    <div className="mb-4">
+    <div className="mb-4" style={{ marginTop: '15px' }}>
       <img src={icon} alt="Expertise Icon" className="w-10 h-10" />
     </div>
     <h2
@@ -78,10 +80,11 @@ const Product = () => {
   {/* Approach Card */}
   <div
     className="bg-white pl-8 pr-8 pb-8 pt-1 shadow-lg w-[360px] h-[460px]"
+    style={{ borderRadius: '4px' }}
     data-aos="fade-up"
     data-aos-duration="3000"
   >
-    <div className="mb-4">
+    <div className="mb-4" style={{ marginTop: '15px' }}>
       <img src={icon} alt="Approach Icon" className="w-10 h-10" />
     </div>
     <h2

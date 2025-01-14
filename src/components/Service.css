@@ -14,14 +14,15 @@ body {
   height: 550px;
   /* margin-top: 30px; */
   letter-spacing: 10%;
-  /* width: 500px; */
+  width: 1200px;
 }
 
 /* Media query for mobile view */
 @media (max-width: 768px) {
   .services-section {
     display: block;  /* Removes flex */
-    height: 100%;    /* Sets height to 100% */
+    height: 100%;  
+    width: 370px;  /* Sets height to 100% */
   }
 }
 
