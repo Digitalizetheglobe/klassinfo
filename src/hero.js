@@ -135,7 +135,7 @@ const Hero = () => {
         <div className="content">
           <h1>KLAS</h1>
           <h4>INFOTECH</h4>
-          {/* <p>PURPOSE-DRIVEN ALLIANCES</p> */}
+          <p>PURPOSE-DRIVEN ALLIANCES</p>
         </div>
          {/* <p>PURPOSE-DRIVEN ALLIANCES</p> */}
       </section>
