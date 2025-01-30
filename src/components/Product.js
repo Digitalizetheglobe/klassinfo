@@ -69,7 +69,7 @@ const Product = () => {
     >
       Our Mission
     </h2>
-    <p className="text-gray-700 leading-[220%] tracking-[0.1em]">
+    <p className="text-gray-700 font-[Jost] text-justify" style={{ fontSize: '1.10rem', lineHeight: '2rem', }}>
       We are dedicated to identifying cutting-edge opportunities across the tech landscape, seeking startups with bold visions and disruptive potential. KLAS provides the essential support, resources, mentorship, and network to help these ventures thrive.
     </p>
   </div>
@@ -90,7 +90,7 @@ const Product = () => {
     >
       Our Expertise
     </h2>
-    <p className="text-gray-700 leading-[220%] tracking-[0.1em] ">
+    <p className="text-gray-700 font-[Jost] text-justify" style={{ fontSize: '1.10rem', lineHeight: '2rem', }} >
       With deep-rooted experience across both traditional and frontier technologies, KLAS brings a wealth of insights and proven strategies to every partnership. Our expertise equips us to make informed, high-impact decisions, fostering value creation and sustainable growth.
     </p>
   </div>
@@ -111,7 +111,7 @@ const Product = () => {
     >
       Our Approach
     </h2>
-    <p className="text-gray-700 tracking-[0.1em] leading-[220%]">
+    <p className="text-gray-700 font-[Jost] text-justify" style={{ fontSize: '1.10rem', lineHeight: '2rem', }}>
       Our philosophy is hands-on and collaborative. We work closely with our partner companies, providing both strategic guidance and operational support to unlock their highest potential.
     </p>
   </div>

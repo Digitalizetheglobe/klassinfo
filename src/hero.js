@@ -165,7 +165,7 @@ const Hero = () => {
           <br />
           And Innovation
         </h2>
-        <p>
+        <p className="font-[Jost] text-justify" style={{ fontSize: '1.10rem', lineHeight: '2rem', }}>
           KLAS Infotech is a visionary partner for tech startups, empowering
           them to scale both locally and globally. Our focus lies in software
           and technology solutions that tackle impactful and real-world

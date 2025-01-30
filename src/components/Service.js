@@ -54,7 +54,7 @@ const Service = () => {
 </h2>
 
 
-  <p class="text-base text-gray-700 tracking-[0.1em] leading-[250%]">
+  <p class="text-base text-gray-700 font-[Jost] text-justify" style={{ fontSize: '1.10rem', lineHeight: '2rem', }}>
     Empowering your business with tailored technology solutions designed to drive growth, streamline operations, and foster innovation. Discover how our expertise in IT strategy, digital transformation, cloud services, and enterprise solutions can propel you forward.
   </p>
 </div>

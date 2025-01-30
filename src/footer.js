@@ -45,7 +45,7 @@ const Footer = () => {
       {/* Horizontal Line */}
       <hr className="border-t border-gray-400 mt-6" />
       <span className="block text-center hover:underline text-[#d4af7a] pt-2">
-  © 2024 Klas Infotech | Carefully Crafted by Digitalize The Globe
+  © 2024 KLAS Infotech | Carefully Crafted by Digitalize The Globe
 </span>
 
     </footer>

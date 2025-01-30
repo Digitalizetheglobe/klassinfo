@@ -46,7 +46,7 @@ export const AnimatedTestimonials = ({ testimonials, autoplay = false }) => {
   }}>
               Making an Impact
             </h4>
-            <p className="text-[14px] sm:text-[16px] lg:text-[18px] text-white mt-4 font-normal tracking-[0.1em] leading-[150%]">
+            <p className="text-[14px] sm:text-[16px] lg:text-[18px] text-white mt-4 font-[Jost] text-justify" style={{ fontSize: '1.10rem', lineHeight: '2rem', }}>
               At KLAS Infotech, our projects are more than initiatives; they are milestones on the path to digital transformation.
             </p>
           </div>
