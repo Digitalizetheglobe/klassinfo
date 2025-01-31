@@ -9,7 +9,7 @@ export default function OneBlog() {
       content: (
         <div>
           <p className="text-neutral-800 text-xs md:text-sm font-normal mb-4 " style={{ fontSize: '1.10rem', lineHeight: '2rem', }}>
-          <b>Mr. Subramanian</b> co-founded Silverline Technologies, laying the groundwork for India’s IT services expansion.
+          <b>Mr. Kumar Subramanian</b> co-founded Silverline Technologies, laying the groundwork for India’s IT services expansion.
           </p>
           
         </div>
@@ -30,7 +30,7 @@ export default function OneBlog() {
       content: (
         <div>
           <p className="text-neutral-800 text-xs md:text-sm font-normal mb-4 "  style={{ fontSize: '1.10rem', lineHeight: '2rem', }}>
-          Silverline becomes India’s first company to be listed in the prestigious New York Stock Exchange (NYSE) with a <b>peak valuation</b> of <b>$1.2 Billion</b>. The company also operated in other major global exchanges such as the <b>BSE, NSE, Luxembourg Stock Exchange and NASDAQ</b>.
+          Silverline became India’s first company to be listed in the prestigious New York Stock Exchange (NYSE) with a <b>peak valuation</b> of <b>$1.2 Billion</b>. The company also operated in other major global exchanges such as the <b>BSE, NSE, Luxembourg Stock Exchange and NASDAQ</b>.
           </p>
           <div className="grid grid-cols-2 gap-4"></div>
         </div>
@@ -41,7 +41,7 @@ export default function OneBlog() {
       content: (
         <div>
           <p className="text-neutral-800 text-xs md:text-sm font-normal mb-4" style={{ fontSize: '1.10rem', lineHeight: '2rem', }}>
-          Mr. Subramanian brings his legacy to KLAS Infotech, setting the stage for future innovation.
+          Mr. Kumar Subramanian brings his legacy to KLAS Infotech, setting the stage for future innovation.
           </p>
           <div className="grid grid-cols-2 gap-4"></div>
         </div>
